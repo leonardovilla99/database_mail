@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-9000,-2250)">
+        <g id="Page-10" serif:id="Page 10" transform="matrix(1,0,0,1,9000,2250)">
+            <rect x="0" y="0" width="2000" height="2000" style="fill:none;"/>
+            <g id="Livello-1" serif:id="Livello 1">
+                <g transform="matrix(1,0,0,1,657.812,238.917)">
+                    <path d="M0,957.557C117.446,964.417 235.31,1018.38 348.869,987.64C426.017,966.758 487.293,909.933 555.363,868.05C711.402,772.037 913.961,757.869 1083.03,827.288L1083.03,-96.917L342.187,683.455L-398.657,-96.917L-398.657,1054.47C-267.421,1006.06 -137.924,949.503 0,957.557" style="fill:rgb(192,243,255);fill-rule:nonzero;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,1740.84,1325.41)">
+                    <path d="M0,532.592L0,0C-31.025,3.267 -61.402,9.044 -90.149,16.875C-264.918,64.476 -431.261,164.98 -612.089,154.42C-729.535,147.561 -847.399,93.6 -960.958,124.338C-1038.11,145.22 -1099.38,202.045 -1167.45,243.927C-1261.19,301.606 -1371.72,329.736 -1481.69,327.968L-1481.69,532.592L0,532.592Z" style="fill:rgb(98,131,164);fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
