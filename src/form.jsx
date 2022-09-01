@@ -1,6 +1,11 @@
 import { useState} from 'react'
-import React from 'react';
+import React from 'react'
+import { initializeApp } from "firebase/app";
+import { getDatabase, set, ref } from "firebase/database";
+import { async } from '@firebase/util';
+
 import './index.css'
+import config from './config.js'
 
 class Form extends React.Component {
 
@@ -15,6 +20,10 @@ class Form extends React.Component {
       this.handleChangeEmail = this.handleChangeEmail.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
+
+    componentDidMount = async () => {
+      const app = initializeApp(config);
+    }
   
     handleChangeName(event) {
       this.setState({name: event.target.value});
@@ -24,7 +33,11 @@ class Form extends React.Component {
       }
   
     handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.name + this.state.email);
+      const db = getDatabase();
+      set(ref(db, 'users/'), {
+        name: this.state.name,
+        email: this.state.email
+      });
       event.preventDefault();
     }
   

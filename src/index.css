@@ -34,7 +34,7 @@ html{
   font-size: 1.8em;
 }
 form{
-  margin-top: 2em;
+  margin-top: 1em;
 }
 label input{
   background: none;
@@ -42,6 +42,7 @@ label input{
   border: none;
   border-bottom: 1px solid var(--lightblue);
   width: 60%;
+  color: white;
 }
 label input:focus{
   outline: none;
