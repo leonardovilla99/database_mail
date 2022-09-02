@@ -34,10 +34,11 @@ class Form extends React.Component {
   
     handleSubmit(event) {
       const db = getDatabase();
-      set(ref(db, 'users/'), {
+      set(ref(db,this.state.name), {
         name: this.state.name,
         email: this.state.email
       });
+      this.setState({email: "",name: ""})
       event.preventDefault();
     }
   

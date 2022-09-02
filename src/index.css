@@ -61,6 +61,10 @@ form p{
   margin-top: 3em;
   color: white;
 }
+.invio:active{
+  background-color: white;
+  color: var(--blue);
+}
 .info{
   position: absolute;
   bottom: 10px;
