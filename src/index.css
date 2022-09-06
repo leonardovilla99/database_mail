@@ -80,3 +80,9 @@ form p{
   margin-top: 20px;
   border-radius: 2em;
 }
+.error{
+  background-color: red;
+  padding: 0.01em;
+  margin-top: 20px;
+  border-radius: 2em;
+}

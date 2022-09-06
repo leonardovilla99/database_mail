@@ -5,7 +5,7 @@ import { useParams,useLocation} from "react-router-dom"
 import Form from './form'
 
 function App() {
-  Invoice()
+  //Invoice()
   return (
     <div>
       <div className="app">
@@ -18,10 +18,11 @@ function App() {
     </div>
   )
 }
-
+/*
 function Invoice() {
-  const params = new URLSearchParams(window.location.pathname);
-  console.log(params.get("userId"))
-}
+  const queryParams = new URLSearchParams(window.location.search)
+  const term = queryParams.get("userId")
+  console.log(term)
+}*/
 
 export default App
