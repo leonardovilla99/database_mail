@@ -74,3 +74,9 @@ form p{
   text-align: center;
   width: 100%;
 }
+.sent{
+  background-color: green;
+  padding: 0.01em;
+  margin-top: 20px;
+  border-radius: 2em;
+}

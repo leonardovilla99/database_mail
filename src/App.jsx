@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import './index.css'
+import { useParams,useLocation} from "react-router-dom"
 
 import Form from './form'
 
 function App() {
-
+  Invoice()
   return (
     <div>
       <div className="app">
@@ -16,6 +17,11 @@ function App() {
       <p className='info'>This informations will be use for information porposes</p>
     </div>
   )
+}
+
+function Invoice() {
+  const params = new URLSearchParams(window.location.pathname);
+  console.log(params.get("userId"))
 }
 
 export default App
