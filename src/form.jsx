@@ -45,15 +45,18 @@ class Form extends React.Component {
   handleChangeEmail(event) {
     this.setState({email: event.target.value});
   }
+
+  isValid(email,user) {
+    let c = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(c.test(email) && user != "" && email != ""){
+      return true;
+    }else{
+      return false;
+    }
+  }
   
   handleSubmit(event) {
-    if(this.state.user === "" || this.state.email === ""){
-      event.preventDefault();
-      this.setState({email: "",name: "",error:true})
-      setTimeout(() => {
-        this.setState({error:false})
-      }, 5000);
-    }else{
+    if(this.isValid(this.state.email,this.state.user)){
       const db = getDatabase();
       set(ref(db,'users/' + this.state.finder + "/" + this.state.name), {
         name: this.state.name,
@@ -63,6 +66,12 @@ class Form extends React.Component {
       this.setState({email: "",name: "",sent:true})
       setTimeout(() => {
         this.setState({sent:false})
+      }, 5000);
+    }else{
+      event.preventDefault();
+      this.setState({email: "",name: "",error:true})
+      setTimeout(() => {
+        this.setState({error:false})
       }, 5000);
     }
     
@@ -81,7 +90,7 @@ class Form extends React.Component {
     
     const Error = () => (
       <div className="error">
-        <p>Please compile all the box</p>
+        <p>Please compile all the box with valid text</p>
       </div>
     )
 
